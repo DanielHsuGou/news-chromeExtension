@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "News Corner",
+  "description": "Get updated news anytime, anywhere.",
+  "version": "1.0",
+  "action": {
+    "default_popup": "index.html",
+
+    "default_icon": "Circle-icons-news.png"
+  },
+  "icons": {
+    "48": "Circle-icons-news-48.png",
+    "128": "Circle-icons-news-128.png"
+  },
+  "content_scripts": [
+    {
+      "js": ["script.js", "flowbite.js"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
